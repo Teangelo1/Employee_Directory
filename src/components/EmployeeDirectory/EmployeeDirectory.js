@@ -4,21 +4,20 @@ import API from "../../../src/utils/API";
 
 class EmployeeDirectory extends Component {
   state = {
-    search: "",
+    search: '',
     employees: [],
+    order: '',
+    filteredEmployees: []
     
   };
 
   // When this component mounts, search for the employee
   componentDidMount() {
-    this.searchEmployee('');
-  }
-
-  searchEmployee = query => {
-    API.searchEmployees(query)
-      .then(res => this.setState({ result: res.data }))
-      .catch(err => console.log(err));
-  };
+    API.searchEmployees().then(res => this.setState({
+        employees: res.data.results,
+        filteredEmployees: res.data.results
+    })).catch(err => console.log(err))
+}
 
   handleInputChange = event => {
     const value = event.target.value;
@@ -38,14 +37,14 @@ class EmployeeDirectory extends Component {
     return (
 
               <Search
-                value={this.state.search}
+              value={this.state.search}
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
               />
+              
          
     );
   }
 }
-console.log(Search);
 
 export default EmployeeDirectory;

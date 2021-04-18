@@ -6,13 +6,12 @@ function EmployeeTable(props) {
             <tbody>
                 <tr>
                     <th>
-                        <img alt={props.firstName} src={props.picture} />
+                        <img alt={props.name} src={props.picture} />
                     </th>
-                    <td>{props.firstName}</td>
-                    <td>{props.lastName}</td>
-                    <td>{props.phone}</td>
-                    <td>{props.email}</td>
-                    <td>{props.DOB}</td>
+                    <td>Name: {props.name}</td>
+                    <td>Phone Number: {props.phone}</td>
+                    <td>Email: {props.email}</td>
+                    <td>DOB: {props.DOB}</td>
                 </tr>
             </tbody>
         </table>
