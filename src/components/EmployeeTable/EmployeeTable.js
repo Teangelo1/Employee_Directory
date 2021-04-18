@@ -9,8 +9,8 @@ function EmployeeTable(props) {
         </th>
         <td>{props.firstName}</td>
         <td>{props.lastName}</td>
-        <td>{props.email}</td>
         <td>{props.phone}</td>
+        <td>{props.email}</td>
         <td>{props.city}</td>
       </tr>
     </thead>
