@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import EmployeeDirectory from "./components/EmployeeDirectory/EmployeeDirectory";
+import EmployeeTable from './components/EmployeeTable/EmployeeTable';
 
 
 
@@ -10,13 +11,9 @@ function App() {
 
     <div className="App">
       <Header />
-     
-      <header className="App-header">
-        <EmployeeDirectory />
-      
-       
-        
-      </header>
+      <EmployeeDirectory />
+      <EmployeeTable />
+    
     </div>
   );
 }

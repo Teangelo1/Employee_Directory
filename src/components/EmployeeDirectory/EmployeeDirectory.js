@@ -4,8 +4,9 @@ import API from "../../../src/utils/API";
 
 class EmployeeDirectory extends Component {
   state = {
-    result: {},
-    search: ""
+    search: "",
+    employees: [],
+    
   };
 
   // When this component mounts, search for the employee
