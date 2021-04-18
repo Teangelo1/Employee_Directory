@@ -1,16 +1,19 @@
 
 import './App.css';
 import Header from './components/Header/Header';
-import Search from './components/Search/Search'
-import index from './components/Header/style.css'
+import EmployeeDirectory from "./components/EmployeeDirectory/EmployeeDirectory";
+
+
 
 function App() {
   return (
 
     <div className="App">
-      <Header/>
-      <Search/>
+      <Header />
+     
       <header className="App-header">
+        <EmployeeDirectory />
+      
        
         
       </header>

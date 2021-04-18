@@ -1,12 +1,9 @@
 import axios from "axios";
-
-// Export an object containing methods we'll use for accessing the GitHub Jobs API
+const BASEURL = "https://randomuser.me/api/"
 
 export default {
+
   searchEmployees: function(query) {
-    return axios.get(
-      "https://randomuser.me/api/" +
-        query 
-    );
+    return axios.get( BASEURL + query );
   }
 };
