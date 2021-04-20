@@ -6,8 +6,7 @@ function Search(props) {
       <div className="form-group">
         <label htmlFor="search">Search:</label>
         <input
-          onChange={props.handleInputChange}
-          value={props.value}
+          onChange={ e => props.handleInputChange(e)}
           name="search"
           type="text"
           className="form-control"
