@@ -11,7 +11,7 @@ function EmployeeTable({ employees }) {
                             <th>
                                 <img alt={name.first + "" + name.last} src={picture.thumbnail} />
                             </th>
-                            <td>Name: {name.first + "" + name.last}</td>
+                            <td>Name: {name.first + " " + name.last}</td>
                             <td>Phone Number: {phone}</td>
                             <td>Email: {email}</td>
                             <td>DOB: {dob.date}</td>
