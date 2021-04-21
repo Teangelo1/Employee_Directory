@@ -14,11 +14,11 @@ class EmployeeDirectory extends Component {
   };
 
   headings = [
-    { name: "Image", width: "15%" },
-    { name: "Name", width: "20%" },
-    { name: "Phone", width: "25%" },
-    { name: "Email", width: "33%" },
-    { name: "DOB", width: "35%" }
+    { name: "Image", width: "40%" },
+    { name: "Name", width: "40%" },
+    { name: "Phone", width: "40%" },
+    { name: "Email", width: "40%" },
+    { name: "DOB", width: "25%" }
   ]
   // When this component mounts, search for the employee
   componentDidMount() {

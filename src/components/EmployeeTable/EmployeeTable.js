@@ -22,25 +22,6 @@ function EmployeeTable({ employees }) {
             </tbody>
         </table>
     );
-    // return (
-    //     <table>
-    //         <tbody>
-    //             {/* {props.employees.map(({firstName, lastName, picture, phone, email,dob}))} */}
-    //             <tr>
-    //                 <th>
-    //                     <img alt={props.name} src={props.picture} />
-    //                 </th>
-
-    //                 <td>First Name: {props.lastName}</td>
-    //                 <td>Last Name: {props.firstName}</td>
-    //                 <td>Phone Number: {props.phone}</td>
-    //                 <td>Email: {props.email}</td>
-    //                 <td>DOB: {props.DOB}</td>
-    //             </tr>
-    //         </tbody>
-    //     </table>
-
-
 
 
 }
