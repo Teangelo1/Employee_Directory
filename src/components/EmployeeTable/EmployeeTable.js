@@ -9,7 +9,7 @@ function EmployeeTable({ employees }) {
                     (employees.map(({ picture, name, phone, email, dob }) => (
                         <tr>
                             <th>
-                                <img alt={name.first + "" + name.last} src={picture.thumbnail} />
+                                <img alt={name.first + " " + name.last} src={picture.thumbnail} />
                             </th>
                             <td>Name: {name.first + " " + name.last}</td>
                             <td>Phone Number: {phone}</td>
@@ -17,7 +17,7 @@ function EmployeeTable({ employees }) {
                             <td>DOB: {dob.date}</td>
                         </tr>
                     ))): 
-                    // fragment
+                    // fragment to display "No employees found if the user searches for an employee not in the list"
                   <> No employees found </>  } 
             </tbody>
         </table>

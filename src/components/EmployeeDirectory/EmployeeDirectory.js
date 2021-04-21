@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Search from '../Search/Search'
 import API from "../../../src/utils/API";
-
 import DataBody from '../DataBody/DataBody';
 
 class EmployeeDirectory extends Component {
@@ -20,7 +19,7 @@ class EmployeeDirectory extends Component {
     { name: "Email", width: "40%" },
     { name: "DOB", width: "25%" }
   ]
-  // When this component mounts, search for the employee
+  // When this component mounts, give us random employees from the API call
   componentDidMount() {
     API.searchEmployees().then(data => {console.log(data); return data}).then(res => this.setState({
       employees: res.data.results,
@@ -30,13 +29,14 @@ class EmployeeDirectory extends Component {
 
   handleInputChange = event => {
     const value = event.target.value;
-    const filtered = this.state.filteredEmployees.filter(employee => employee.name.first.toLowerCase().startsWith(value.toLowerCase())) // logging data differently after each filter.
+    const filtered = this.state.employees.filter(employee => employee.name.first.toLowerCase().startsWith(value.toLowerCase())) // logging data differently after each filter.
     this.setState({
      filteredEmployees: filtered
     });
     console.log(this.state)
   };
 
+  
 
   // write function to sort data by name and set this content to be the state of the filtered employees.
   
@@ -46,6 +46,7 @@ class EmployeeDirectory extends Component {
       <div>
         <Search
           handleInputChange={this.handleInputChange}
+        
         
         />
 
