@@ -38,7 +38,7 @@ class EmployeeDirectory extends Component {
 
   
 
-  // write function to sort data by name and set this content to be the state of the filtered employees.
+  // write function to sort data by name and set this content to be the state of the employees.
   
 
   render() {
