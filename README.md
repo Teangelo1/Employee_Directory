@@ -24,9 +24,6 @@ The user should be able to:
 
 # License: None
 
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
-
-* **Important**: Be sure to push your codebase to GitHub and **NOT** your built and deployed code. Ensure this happens by following the above instructions and using the `gh-pages` branch to host the deployed application's code.
 
 # Technologies used:
 
@@ -36,7 +33,7 @@ The user should be able to:
 * React.js
 &nbsp;
 
-## Deployed : [Employee Directory]()
+## Deployed URL with GH Pages : [Employee Directory](https://teangelo1.github.io/Employee_Directory/)
 &nbsp;
 
 # Contact Me
