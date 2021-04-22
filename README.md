@@ -33,7 +33,7 @@ The user should be able to:
 * React.js
 &nbsp;
 
-## Deployed URL with GH Pages : [Employee Directory](https://teangelo1.github.io/Employee_Directory/)
+## Deployed URL with GH Pages : [Employee Directory]()
 &nbsp;
 
 # Contact Me
