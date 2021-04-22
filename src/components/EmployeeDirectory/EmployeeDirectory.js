@@ -13,11 +13,11 @@ class EmployeeDirectory extends Component {
   };
 
   headings = [
-    { name: "Image", width: "40%" },
-    { name: "Name", width: "40%" },
-    { name: "Phone", width: "40%" },
-    { name: "Email", width: "40%" },
-    { name: "DOB", width: "25%" }
+    { name: "Image", width: "" },
+    { name: "Name", width: "25%" },
+    { name: "Phone", width: "25%" },
+    { name: "Email", width: "25%" },
+    { name: "DOB", width: "45%" }
   ]
   // When this component mounts, give us random employees from the API call
   componentDidMount() {
